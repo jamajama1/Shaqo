@@ -1,0 +1,38 @@
+﻿@page "/Jobs"
+@using Microsoft.AspNetCore.Authorization;
+@using Shaqo.Localization
+@using Shaqo.Permissions;
+@using Shaqo.Web.Pages.Jobs
+@using Microsoft.Extensions.Localization
+@model List<Shaqo.Web.Pages.Jobs.JobModel>
+@inject IStringLocalizer<ShaqoResource> L
+@inject IAuthorizationService AuthorizationService
+@section scripts
+{
+    <abp-script src="/Pages/Jobs/Index.js" />
+}
+
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>@L["Jobs"]</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-end">
+                @if (await AuthorizationService.IsGrantedAsync(ShaqoPermissions.Jobs.Create))
+                {
+                    
+                
+                <abp-button id="NewJobButton"
+                            text="@L["NewJob"].Value"
+                            icon="plus"
+                            button-type="Primary" />
+                }
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="JobsTable"></abp-table>
+    </abp-card-body>
+</abp-card>
+

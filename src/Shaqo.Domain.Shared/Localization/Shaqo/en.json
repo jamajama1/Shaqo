@@ -1,0 +1,31 @@
+{
+  "Culture": "en",
+  "Texts": {
+    "Menu:Home": "Home",
+    "Welcome": "Welcome",
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "Menu:Job": "Job",
+    "Menu:Jobs": "Jobs",
+    "Actions": "Actions",
+    "Close": "Close",
+    "Delete": "Delete",
+    "Edit": "Edit",
+    "CreatedDate": "Created date",
+    "NewJob": "New job",
+    "Name": "Name",
+    "Type": "Type",
+    "Price": "Price",
+    "Salary": "Salary",
+    "CreationTime": "Creation time",
+    "AreYouSure": "Are you sure?",
+    "AreYouSureToDelete": "Are you sure you want to delete this item?",
+    "JobDeletionConfirmationMessage": "Are you sure to delete the Job '{0}'?",
+    "SuccessfullyDeleted": "Successfully deleted!",
+    "Permission:Shaqo": "Jobs",
+    "Permission:Jobs": "Job Management",
+    "Permission:Jobs.Create": "Creating new jobs",
+    "Permission:Jobs.Edit": "Editing the jobs",
+    "Permission:Jobs.Delete": "Deleting the jobs"
+
+  }
+}
